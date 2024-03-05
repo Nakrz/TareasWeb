@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Tareas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer ></script>
+</head>
+<body>
+    <header>
+        <p>Administrador de Tareas</p>
+    </header>
+    <div class="container">
+        <h3>Tarea</h3><input type="text" id="taskName" placeholder="Nombre de tarea">
+        <div class="date-input">
+                <label for="fechaIni">Fecha Inicio</label>
+                <input type="date" id="fechaIni">
+
+                <label for="fechaVen">Fecha Fin</label>
+                <input type="date" id="fechaVen">
+            </div>
+            <div class="responsable-input">
+                <br>
+                <br>
+                <label for="responsable">Responsable</label>
+                <input type="text" id="responsable">
+            </div>
+                <div class="nivel-input">
+                <h2>Nivel</h2>
+                <input type="radio" id="alto" name="nivel" value="alto">
+                <label for="alto">Alto</label>
+        
+                <input type="radio" id="medio" name="nivel" value="medio">
+                <label for="medio">Medio</label>
+    
+            <input type="radio" id="bajo" name="nivel" value="bajo">
+            <label for="bajo">Bajo</label>
+        </div>
+        <div class="upload-task">
+            <button id="uploadButton">+</button>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Tareas Pendientes</h2>
+        <ul id="tareasPendientes"></ul>
+    </div>
+    <div class="container">
+        <h2>Tareas Completadas</h2>
+        <ul id="tareasCompletadas"></ul>
+    </div>
+    <div class="container">
+        <h2>Tareas Fallidas</h2>
+        <ul id="tareasFallidas"></ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #d6b979;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    padding: 7px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgb(255, 217, 130);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.date-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.date-input label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: calc(50% - 5px);
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ede4e4;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: rgb(88, 211, 50);
+    box-shadow: 5px rgb(88, 211, 50);
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(78, 99, 119);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #007bff;
+}
+
+.nivel-input {
+    display: inline-block;
+}
+
+.nivel-input h2 {
+    display: inline-block;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-right: 70px;
+}
+
+#alto + label,
+#medio + label,
+#bajo + label {
+    font-size: 18px;
+}
+
+.responsable-input label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#taskName, #responsable {
+    width: 580px;
+}
+
+#uploadButton {
+    font-size: 30px;
+    background-color: lightgreen;
+    border-radius: 50px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 100%;
+    }
+
+    #taskName, #responsable {
+        width: calc(100% - 20px);
+    }
+}
